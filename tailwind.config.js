@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./dist/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero': "url('../assets/images/hero/hero-background.webp')",
+      }
+    },
   },
   plugins: [],
 }

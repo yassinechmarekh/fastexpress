@@ -32,7 +32,7 @@ closeCart.addEventListener("click", close_cart);
 
 window.addEventListener('scroll', () => {
   if(window.scrollY > 40){
-    mainHeader.className = "fixed top-0 left-0 right-0 bg-blue-950";
+    mainHeader.className = "fixed top-0 left-0 right-0 bg-blue-950 z-30";
   }else{
     mainHeader.className = "";
   }
