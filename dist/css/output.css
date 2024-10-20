@@ -832,11 +832,6 @@ video {
   margin-right: auto;
 }
 
-.my-10{
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
 .ml-4{
   margin-left: 1rem;
 }
@@ -853,8 +848,16 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-20{
+  margin-top: 5rem;
+}
+
 .mt-5{
   margin-top: 1.25rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
 }
 
 .flex{
@@ -892,6 +895,14 @@ video {
 
 .w-12{
   width: 3rem;
+}
+
+.w-2\/3{
+  width: 66.666667%;
+}
+
+.w-32{
+  width: 8rem;
 }
 
 .w-4{
@@ -1030,6 +1041,10 @@ video {
 
 .border-2{
   border-width: 2px;
+}
+
+.border-4{
+  border-width: 4px;
 }
 
 .border-x{
@@ -1292,6 +1307,10 @@ video {
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: red !important;
 }
 
 .hover\:rotate-90:hover{

@@ -40,3 +40,7 @@
     @apply absolute top-0 left-0 translate-x-0 translate-y-0 w-16 h-16 bg-red-500 rounded-br-full scale-0 group-hover:scale-100 transition-all duration-300 ease-in-out origin-top-left z-10;
   }
 }
+
+.swiper-pagination-bullet-active{
+  background-color: red !important;
+}
