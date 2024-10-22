@@ -961,10 +961,6 @@ video {
   margin-top: 5rem;
 }
 
-.mt-5{
-  margin-top: 1.25rem;
-}
-
 .mt-6{
   margin-top: 1.5rem;
 }
@@ -996,6 +992,10 @@ video {
 
 .h-screen{
   height: 100vh;
+}
+
+.min-h-\[900px\]{
+  min-height: 900px;
 }
 
 .w-10{
@@ -1589,6 +1589,10 @@ video {
 
   .sm\:flex{
     display: flex;
+  }
+
+  .sm\:min-h-screen{
+    min-height: 100vh;
   }
 
   .sm\:w-3\/4{
