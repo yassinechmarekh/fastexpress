@@ -3,6 +3,7 @@ const menucart = document.getElementById("cart-info-btn");
 const closeCart = document.getElementById("close-cart");
 const mainHeader = document.getElementById("main-header");
 const faq = document.querySelectorAll("#faq-list li");
+const btnBackToTop = document.getElementById('back-to-top');
 
 function close_cart() {
   cartInfo.classList.remove("right-0");
@@ -79,3 +80,41 @@ faq.forEach((item) => {
 });
 
 
+btnBackToTop.addEventListener('click', (eo) => {
+  window.scroll({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
+
+window.addEventListener('scroll',(eo) => {
+  if(window.scrollY === 0){
+    btnBackToTop.classList.add("hidden");
+  }else{
+    btnBackToTop.classList.remove("hidden");
+  }
+});
+
+
+function activateMenuItem(menuItemId) {
+  document.querySelectorAll('#menu li').forEach(function(li) {
+    li.classList.remove('text-red-500');
+  });
+  document.getElementById(menuItemId).classList.add('text-red-500');
+}
+
+
+window.addEventListener('scroll', (eo) => {
+  const sections = document.querySelectorAll('section');
+  let currentSection = '';
+
+  sections.forEach(function(section) {
+    if (window.scrollY >= section.offsetTop - 300) {
+      currentSection = section.id;
+    }
+  });
+
+  if (currentSection) {
+    activateMenuItem(`menu-${currentSection}`);
+  }
+});
