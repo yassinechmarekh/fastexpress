@@ -1595,6 +1595,14 @@ video {
     min-height: 100vh;
   }
 
+  .sm\:min-h-\[screen\]{
+    min-height: screen;
+  }
+
+  .sm\:min-h-\[550px\]{
+    min-height: 550px;
+  }
+
   .sm\:w-3\/4{
     width: 75%;
   }
