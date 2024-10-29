@@ -1591,16 +1591,16 @@ video {
     display: flex;
   }
 
-  .sm\:min-h-screen{
-    min-height: 100vh;
+  .sm\:min-h-\[570px\]{
+    min-height: 570px;
   }
 
-  .sm\:min-h-\[screen\]{
-    min-height: screen;
+  .sm\:min-h-\[px\]{
+    min-height: px;
   }
 
-  .sm\:min-h-\[550px\]{
-    min-height: 550px;
+  .sm\:min-h-\[750px\]{
+    min-height: 750px;
   }
 
   .sm\:w-3\/4{
@@ -1734,6 +1734,10 @@ video {
 }
 
 @media (min-width: 1536px){
+  .\32xl\:min-h-screen{
+    min-height: 100vh;
+  }
+
   .\32xl\:p-3{
     padding: 0.75rem;
   }
